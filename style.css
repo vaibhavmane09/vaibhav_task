@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+.container {
+    position: relative;
+    width: 50%;
+    box-shadow: 1px -1px 8px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 1rem;
+    overflow: hidden;
+    margin: 2rem auto;
+}
+
+.container  h1 {
+    font-size: 2.4rem;
+    text-align: center;
+    margin: 1rem;
+}
+
+.container h1  hr{
+    width: 45%;
+    margin: .2rem auto;
+}
+
+.container .sm-container {
+    position: relative;
+    margin: 3% auto;
+}
+
+.container .sm-container form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: .2s ease-in-out .7s;
+}
+
+
+.container .sm-container form .tab{
+    max-width: 35rem;
+    width: 80%;
+    background-color: #fff;
+    border-radius: 5.5rem;
+    border: 1px solid #444343;
+
+
+    display: grid;
+    grid-template-columns: 25% 75%;
+    margin: 1rem auto;
+}
+
+.container .sm-container form .tab h4{
+    padding-left: 1.5rem;
+    border-radius: 2rem;
+    line-height: 3rem;
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.container .sm-container form .tab input{
+    background: none;
+    outline: none;
+    border: none;
+    border-radius: 2rem;
+    line-height: 1;
+    font-size: 1.1rem;
+    word-spacing: .6rem;
+    letter-spacing: .05rem;
+    font-weight: 500;
+    color: #333;
+    padding: 0 1rem;
+}
+
+
+.container .sm-container form .btn{
+    padding: .4em 2em;
+    border: 1px solid #333;
+    border-radius: 4.5rem;
+    background-color: #0066A2;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 1.3rem auto;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.container .sm-container form .btn:hover{
+    opacity: .75;
+}
+
+
+/* ==================== MEDIA QUERIES ==================== */
+@media (max-width: 1161px) {
+    .container {
+        width: 70%;
+    }
+}
+@media (max-width: 835px) {
+    .container {
+        width: 90%;
+    }
+}
+@media (max-width: 645px) {
+    .container {
+        width: 95%;
+    }
+    .container h1 {
+        font-size: 2rem;
+    }
+    .container .sm-container form .tab {
+        width: 90%;
+    }
+    .container .sm-container form .tab h4 {
+        font-size: .9rem;
+    }
+}
+@media (max-width: 464px) {
+    .container {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 1rem 0;
+        border: none;
+        outline: none;
+        box-shadow: none;
+        border-radius: none;
+    }
+    .container h1 {
+        font-size: 1.8rem;
+    }
+    .container .sm-container form .tab {
+        width: 90%;
+    }
+    .container .sm-container form .tab h4 {
+        font-size: .8rem;
+        padding-left: .5rem;
+    }
+    .container .sm-container form .tab input {
+        font-size: .8rem;
+    }
+}
+@media (max-width: 332px) {
+    .container h1 {
+        font-size: 1.5rem;
+    }
+    .container .sm-container form .tab {
+        width: 85%;
+        grid-template-columns: 30% 70%;
+    }
+    .container .sm-container form .tab h4 {
+        font-size: .6rem;
+        padding-left: .5rem;
+    }
+    .container .sm-container form .tab input {
+        font-size: .6rem;
+    }
+    .footer {
+        font-size: .6rem;
+    }
+}
